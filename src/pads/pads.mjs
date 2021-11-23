@@ -1,4 +1,4 @@
-import genericSoundPlay from "./soundTrigger/genericSoundPlay.mjs";
+import genericSoundPlay from "../genericSoundPlay/genericSoundPlay.mjs";
 
 export function PAD1(data) {
     return genericSoundPlay(data.modeName, data.keyName);

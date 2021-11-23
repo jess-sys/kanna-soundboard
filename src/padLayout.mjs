@@ -1,11 +1,11 @@
-import { PAD1 } from './noteFunction.mjs';
-import { PAD2 } from './noteFunction.mjs';
-import { PAD3 } from './noteFunction.mjs';
-import { PAD4 } from './noteFunction.mjs';
-import { PAD5 } from './noteFunction.mjs';
-import { PAD6 } from './noteFunction.mjs';
-import { PAD7 } from './noteFunction.mjs';
-import { PAD8 } from './noteFunction.mjs';
+import { PAD1 } from './pads/pads.mjs';
+import { PAD2 } from './pads/pads.mjs';
+import { PAD3 } from './pads/pads.mjs';
+import { PAD4 } from './pads/pads.mjs';
+import { PAD5 } from './pads/pads.mjs';
+import { PAD6 } from './pads/pads.mjs';
+import { PAD7 } from './pads/pads.mjs';
+import { PAD8 } from './pads/pads.mjs';
 
 export const noteMatch = {
     "functions": {

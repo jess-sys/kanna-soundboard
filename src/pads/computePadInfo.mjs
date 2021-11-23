@@ -1,4 +1,4 @@
-import {layout, noteMatch} from "./config.mjs";
+import {layout, noteMatch} from "../padLayout.mjs";
 
 export default function computePadInfo(note) {
     let padInfo = {

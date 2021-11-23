@@ -1,5 +1,5 @@
 import easymidi from 'easymidi';
-import computePadInfo from "./computePadInfo.mjs";
+import computePadInfo from "./pads/computePadInfo.mjs";
 
 if (!("API_BASE_URL" in process.env) || process.env.API_BASE_URL === "") {
     console.error("Missing API_BASE_URL env var");
