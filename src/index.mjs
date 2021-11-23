@@ -14,23 +14,18 @@ if (!("API_KEY" in process.env) || process.env.API_KEY === "") {
 function midiListener(inputName) {
     const input = new easymidi.Input(inputName);
 
-    /*input.on('message', (msg) => {
-        const vals = Object.keys(msg).map((key) => `${key}: ${msg[key]}`);
-        console.log(`${inputName}: ${vals.join(', ')}`);
-    });*/
-
     input.on('cc', msg => {
         if (msg.value === 0) {
-            let noteInfo = computePadInfo(msg.controller);
+            let noteInfo = computePadInfo(msg.controller, 'CC');
             noteInfo.functionName(noteInfo);
         }
     });
     input.on('program', msg => {
-        let noteInfo = computePadInfo(msg.number);
+        let noteInfo = computePadInfo(msg.number, 'PROG');
         noteInfo.functionName(noteInfo);
     });
     input.on('noteon', msg => {
-        let noteInfo = computePadInfo(msg.note);
+        let noteInfo = computePadInfo(msg.note, 'PAD');
         noteInfo.functionName(noteInfo);
     });
 }

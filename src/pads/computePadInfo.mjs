@@ -1,13 +1,13 @@
 import {layout, noteMatch} from "../padLayout.mjs";
 
-export default function computePadInfo(note) {
+export default function computePadInfo(note, selectedMode) {
     let padInfo = {
         modeName: "",
         keyName: "",
         functionName: null,
     };
 
-    for (let mode of layout.modes) {
+    for (let mode of layout.modes.filter((r) => r.name.includes(selectedMode))) {
         let keyFound = mode.keys.find((key) => {
             return note in key;
         })

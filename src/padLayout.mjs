@@ -23,7 +23,7 @@ export const noteMatch = {
 export const layout = {
     "modes": [
         {
-            "name": "MODE 1",
+            "name": "MODE PAD 1",
             "keys": [
                 { "36": "PAD 1" },
                 { "37": "PAD 2" },
@@ -36,7 +36,7 @@ export const layout = {
             ]
         },
         {
-            "name": "MODE 3",
+            "name": "MODE PAD 3",
             "keys": [
                 { "60": "PAD 1" },
                 { "62": "PAD 2" },
